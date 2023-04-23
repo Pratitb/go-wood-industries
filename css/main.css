@@ -1,7 +1,8 @@
 :root{
     --website-yellow: #FFB300;
     --website-black: #2b2d42;
-    --section-padding: 60px 0 0;
+    --atf-padding: 60px 0 0;
+    --section-padding: 120px 0 0;
 }
 
 /* general **************************/
@@ -9,10 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
-    color: var(--website-black);
 }
 body{
     /* font-family: 'Rubik', sans-serif; */
@@ -45,6 +46,18 @@ body{
 .text_highlight{
     color: var(--website-yellow);
 }
+.text_underline{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: 600;
+}
+.material-symbols-outlined{
+    font-size: 60px;
+}
+.product_icon{
+    font-size: 24px;
+    margin: 0 0 0 5px;
+}
 
 /* header **************************/
 .top_strip{
@@ -58,6 +71,12 @@ body{
     font-size: 14px;
     font-style: italic;
     letter-spacing: 1px;
+}
+.main_nav_wrap{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 .main_nav{
     display: flex;
@@ -75,7 +94,7 @@ body{
 }
 .nav_links{
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +102,14 @@ body{
 .link{
     font-weight: 600;
     font-size: 14px;
+    color: var(--website-black);
     text-transform: uppercase;
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
 }
 
 /* atf **************************/
@@ -93,19 +119,19 @@ body{
 .atf{
     display: flex;
     justify-content: space-between;
-    padding: var(--section-padding);
+    padding: var(--atf-padding);
 }
 .atf_left{
     max-width: 500px;
 }
 .atf_head{
     font-size: 55px;
+    margin: 20px 0 60px;
     letter-spacing: 1px;
 }
 .atf_desc{
     font-size: 20px;
     line-height: 1.4;
-    margin: 20px 0 60px;
     letter-spacing: 1px;
 }
 .atf-image{
@@ -115,7 +141,7 @@ body{
 .atf_cta_wrap{
     display: inline-block;
     
-    border: 1px solid;
+    border: 1px solid var(--website-black);
 }
 .atf_cta_wrap:hover{
     background-color: var(--website-yellow);
@@ -126,6 +152,7 @@ body{
     text-transform: uppercase;
     border: 1px solid;
     transition: 0.3s;
+    color: var(--website-black);
 }
 .atf_cta:hover{
     background-color: var(--website-black);
@@ -135,7 +162,7 @@ body{
 
 /* product **************************/
 .product_wrap{
-    min-height: 100vh;
+    /* min-height: 70vh; */
     padding: var(--section-padding);
 }
 .card_wrap{
@@ -176,8 +203,34 @@ body{
     letter-spacing: 1px;
 }
 .card_cta{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     padding: 10px 5px;
     border-radius: 5px;
+    color: var(--website-black);
+    /* text-decoration: underline;
+    text-decoration-style: dotted; */
+}
+/* .card_cta:hover{
+    text-decoration: none;
+} */
+.product_icon{
+    position: absolute;
+    transition: 0.3s;
+    left: 60px;
+}
+.card_cta:hover .product_icon{
+    animation: move-right 1.2s linear 0s infinite;
+}
+@keyframes move-right {
+    0%{
+        left: 60px;
+    }
+    100%{
+        left: 70px;
+    }
 }
 .read_more_btn{
     position: absolute;
@@ -192,6 +245,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--website-black);
     background-color: var(--website-yellow);
 }
 .read_more_btn:hover{
@@ -199,7 +253,7 @@ body{
 }
 
 /* industries **************************/
-.industries_wrap, .services_wrap{
+.industries_wrap{
     min-height: 100vh;
     padding: var(--section-padding);
 }
@@ -221,9 +275,79 @@ body{
 }
 
 /* services **************************/
+.services_wrap{
+    min-height: 70vh;
+    padding: var(--section-padding);
+}
 .service{
     flex-basis: 23%;
 }
 .service_name{
     margin: 10px 0 0;
+}
+
+/* advantages **************************/
+.advantages{
+    min-height: 50vh;
+    padding: var(--section-padding);
+}
+.advs{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+.adv{
+    text-align: center;
+    max-width: 20%;
+}
+.adv_text{
+    font-size: 20px;
+    margin: 10px 0 0;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+.footer{
+    padding: 20px 0;
+    background-color: var(--website-black);
+}
+.footer_elems{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright, .location{
+    color: #FFFFFF;
+}
+.location{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.number{
+    color: var(--website-yellow);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/* about **************************/
+.hero{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--website-yellow);
+}
+.hero_text{
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.about_text{
+    font-size: 20px;
+    margin: 30px 0 0;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: var(--website-black);
+}
+.about_advs .section_head{
+    font-size: 26px;
 }
