@@ -67,7 +67,7 @@ body{
 .top_strip{
     padding: 10px;
     text-align: center;
-    background-color: var(--website-yellow);
+    /* background-color: var(--website-yellow); */
 }
 .top_strip_text{
     color: var(--website-black);
