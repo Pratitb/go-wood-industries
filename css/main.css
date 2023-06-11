@@ -282,13 +282,13 @@ body{
     gap: 30px 0;
 }
 .industry{
-    flex-basis: 26%;
+    /* flex-basis: 26%; */
     text-align: center;
 }
 .industry_image{
     max-width: 300px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     object-fit: cover;
 }
 .industry_name, .service_name{
@@ -307,7 +307,7 @@ body{
 .service_image{
     max-width: 265px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .service_name{
     margin: 10px 0 0;
