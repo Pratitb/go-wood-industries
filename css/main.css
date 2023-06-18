@@ -89,7 +89,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid #eeeeee;
 }
 .logo_text{
     font-size: 30px;
@@ -287,6 +287,7 @@ body{
 }
 .industry_image{
     max-width: 300px;
+    height: 180px;
     border-radius: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     object-fit: cover;
@@ -303,9 +304,11 @@ body{
 }
 .service{
     flex-basis: 23%;
+    text-align: center;
 }
 .service_image{
     max-width: 265px;
+    max-height: 145px;
     border-radius: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
@@ -351,6 +354,9 @@ body{
 }
 .contact{
     white-space: nowrap;
+}
+.contact-name{
+    color: var(--website-yellow);
 }
 .number{
     color: var(--website-yellow);
