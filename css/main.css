@@ -2,7 +2,7 @@
     --website-yellow: #FFAB00;
     --website-black: #2b2d42;
     --atf-padding: 60px 0 0;
-    --section-padding: 120px 0 0;
+    --section-padding: 95px 0 0;
 }
 
 /* general **************************/
@@ -23,9 +23,9 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .section_head{
     font-size: 40px;
@@ -164,6 +164,7 @@ body{
     padding: 20px 30px;
     text-transform: uppercase;
     border: 1px solid;
+    border-radius: 12px;
     transition: 0.3s;
     color: var(--website-black);
 }
@@ -274,12 +275,12 @@ body{
 }
 .industries, .services{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 60px 0 0;
 }
 .industries{
-    gap: 30px 0;
+    gap: 40px;
 }
 .industry{
     /* flex-basis: 26%; */
@@ -298,6 +299,9 @@ body{
 }
 
 /* services **************************/
+.services{
+    justify-content: space-between;
+}
 .services_wrap{
     /* min-height: 70vh; */
     padding: var(--section-padding);
