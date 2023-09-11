@@ -352,10 +352,10 @@ body{
 .copyright, .location{
     color: #FFFFFF;
 }
-.location{
+/* .location{
     text-decoration: underline;
     text-decoration-style: dotted;
-}
+} */
 .contact{
     white-space: nowrap;
 }
