@@ -88,16 +88,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 0;
     border-bottom: 1px solid #eeeeee;
 }
-.logo_text{
-    font-size: 30px;
-    font-weight: 700;
-    background: linear-gradient(to right, #2b2d42 20%, #2b2d42 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo img{
+    max-width: 330px;
 }
 .nav_links{
     /* width: 100%; */
@@ -402,9 +397,6 @@ body{
         font-size: 45px;
         line-height: 1.3;
     }
-    .logo_text{
-        font-size: 28px;
-    }
     .link{
         font-size: 14px;
     }
@@ -509,9 +501,6 @@ body{
     .tubeActive .tube_three{
         display: none;
     }
-    .logo_text{
-        font-size: 24px;
-    }
     .mob_link{
         font-size: 20px;
         color: var(--website-black);
@@ -570,9 +559,6 @@ body{
     }
     .main_nav{
         margin: 0 20px;
-    }
-    .logo_text{
-        font-size: 24px;
     }
     .atf_head{
         font-size: 28px;
